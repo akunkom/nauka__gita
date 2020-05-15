@@ -81,3 +81,15 @@ $ git remote --help
 
 # przygotowanie do wysłania pliku do zewnętrznego repozytorium na githubie:
 $ git remote add origin https://github.com/akunkom/nauka_gita.git
+
+# wysłanie na githuba:
+$ git push origin master
+
+# ok... nie poszło dobrze, wskazane repozytorium było wcześniej używane.
+
+# utworzyłam na githabie nowe repozytorium i zgodnie z instrukcję na stronie:
+# https://www.datree.io/resources/git-error-fatal-remote-origin-already-exists
+# zmieniłam przypisanie repozytorium lokalnego:
+$ git remote set-url origin https://github.com/akunkom/nauka__gita.git
+$ git push    # nie zadziałało, podpowiedź:
+$ git push --set-upstream origin master
