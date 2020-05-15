@@ -55,4 +55,29 @@ Changes to be committed:
 
 	nowy plik:     gitnauka.txt
 
-# 
+# commitowanie, konieczny opis zmiany:
+$ git commit -m "pierwsze kroki z gitem"
+[master (root-commit) bcd4b34] pierwsze kroki z gitem
+ 1 file changed, 58 insertions(+)
+ create mode 100644 gitnauka.txt
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+# odpowiedź po wprowadzeniu zmiany w edytowanym pliku:
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	zmodyfikowany: gitnauka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+# jeśli potrzebna pomoc:
+$ git remote --help
+
+# przygotowanie do wysłania pliku do zewnętrznego repozytorium na githubie:
+$ git remote add origin https://github.com/akunkom/nauka_gita.git
