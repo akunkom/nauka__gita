@@ -1,0 +1,58 @@
+# start gita
+
+# sprawdzenie konfiguracji gita:
+~$ git config -l
+# sprawdzenie ścieżki:
+~$ pwd
+/home/joakom
+
+# konfiguracja globalna:
+~$ git config --global user.name "akunkom"
+~$ git config --global user.email "akunkom@users.noreply.github.com"
+~$ git config --global core.editor "atom --wait"
+
+# sprawdzenie konfiguracji
+~$ git config -l
+user.name=akunkom
+user.email=akunkom@users.noreply.github.com
+core.editor=atom --wait
+
+# zainicjowanie lokalnego repozytorium:
+$ git init
+Initialized empty Git repository in /home/joakom/akunkom/nauka_gita/.git/
+
+# kolejne sprawdzenie konfiguracji:
+$ git config -l
+user.name=akunkom
+user.email=akunkom@users.noreply.github.com
+core.editor=atom --wait
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+
+# sprawdzenie statusu:
+$ git status
+On branch master
+No commits yet
+nothing to commit (create/copy files and use "git add" to track)
+
+# stworzenie pliku:
+$ touch gitnauka.txt
+$ atom gitnauka.txt
+
+# dodanie pliku do śledzenia:
+$ git add gitnauka.txt
+
+# sprawdzenie statusu, został dodany plik:
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	nowy plik:     gitnauka.txt
+
+# 
