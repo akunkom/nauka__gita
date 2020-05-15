@@ -93,3 +93,28 @@ $ git push origin master
 $ git remote set-url origin https://github.com/akunkom/nauka__gita.git
 $ git push    # nie zadziałało, podpowiedź:
 $ git push --set-upstream origin master
+
+# po kolejnym uzupełnieniu pliku:
+zmodyfikowany: gitnauka.txt
+
+$ git add gitnauka.txt
+$ git commit -m "uzupełnienie informacji o remote i push"
+   [master 58ef098] uzupełnienie informacji o remote i push
+    1 file changed, 12 insertions(+)
+$ git status
+   On branch master
+   Your branch is ahead of 'origin/master' by 1 commit.
+     (use "git push" to publish your local commits)
+
+   nothing to commit, working tree clean
+
+$ git push
+   Username for 'https://github.com': akunkom
+   Password for 'https://akunkom@github.com':
+   Counting objects: 3, done.
+   Compressing objects: 100% (2/2), done.
+   Writing objects: 100% (3/3), 601 bytes | 601.00 KiB/s, done.
+   Total 3 (delta 1), reused 0 (delta 0)
+   remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+   To https://github.com/akunkom/nauka__gita.git
+      01eb1ba..58ef098  master -> master
