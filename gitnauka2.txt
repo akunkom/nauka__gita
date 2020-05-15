@@ -1,1 +1,31 @@
-#drugi plik 
+#utworzenie i dodanie drugiego pliku do repozytorium
+
+$ touch gitnauka2.txt
+$ git status
+    On branch master
+    Your branch is up to date with 'origin/master'.
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+    	gitnauka2.txt
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add gitnauka2.txt
+$ git commit -m "dodanie drugiego pliku do repozytorium"
+    [master b54c222] dodanie drugiego pliku do repozytorium
+     1 file changed, 1 insertion(+)
+     create mode 100644 gitnauka2.txt
+
+$ git push
+     Username for 'https://github.com': akunkom
+     Password for 'https://akunkom@github.com':
+     Counting objects: 3, done.
+     Compressing objects: 100% (2/2), done.
+     Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+     Total 3 (delta 0), reused 0 (delta 0)
+     To https://github.com/akunkom/nauka__gita.git
+        aea2484..b54c222  master -> master
+
+# uff...
